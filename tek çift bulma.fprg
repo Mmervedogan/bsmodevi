@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="merve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 12:06:36 &#214;&#214;"/>
+        <attribute name="created" value="bWVydmU7REVTS1RPUC0yR0hCUVI1OzIwMTktMTAtMjU7MTI6MDI6NDUgw5bDljszMTUw"/>
+        <attribute name="edited" value="bWVydmU7REVTS1RPUC0yR0hCUVI1OzIwMTktMTAtMjU7MTI6MDY6MzYgw5bDljsxOzMyNjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;" type="Integer" array="False" size=""/>
+            <assign variable="say&#305;" expression="0"/>
+            <while expression="say&#305;&gt;=0">
+                <output expression="&quot;bir say&#305; giriniz.&quot;" newline="True"/>
+                <input variable="say&#305;"/>
+                <if expression="say&#305;%2==0">
+                    <then>
+                        <output expression="say&#305;&amp;&quot; &#231;ifttir.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="say&#305;&amp;&quot; tektir.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

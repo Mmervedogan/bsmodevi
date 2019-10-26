@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="merve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-24 11:46:00 &#214;S"/>
+        <attribute name="created" value="bWVydmU7REVTS1RPUC0yR0hCUVI1OzIwMTktMTAtMjQ7MTE6MzI6MDAgw5ZTOzMwMTE="/>
+        <attribute name="edited" value="bWVydmU7REVTS1RPUC0yR0hCUVI1OzIwMTktMTAtMjQ7MTE6NDY6MDAgw5ZTOzE7MzEyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="birler, onlar, y&#252;zler, binler, onbinler, say&#305;, uzunluk" type="Integer" array="False" size=""/>
+            <output expression="&quot;Be&#351; basamakl&#305; bir say&#305; giriniz.&quot;" newline="True"/>
+            <do expression="uzunluk != 5">
+                <input variable="say&#305;"/>
+                <assign variable="uzunluk" expression="Len(ToString(say&#305;))"/>
+                <if expression="uzunluk != 5">
+                    <then>
+                        <output expression="&quot;L&#252;tfen be&#351; basamakl&#305; bir say&#305; giriniz.&quot;" newline="True"/>
+                        <input variable="say&#305;"/>
+                        <assign variable="birler" expression="say&#305;%10"/>
+                        <assign variable="onlar" expression="(say&#305;/10)%10"/>
+                        <assign variable="y&#252;zler" expression="(say&#305;/100)%10"/>
+                        <assign variable="binler" expression="(say&#305;/1000)%10"/>
+                        <assign variable="onbinler" expression="(say&#305;/10000)%10"/>
+                        <if expression="(birler==onbinler)&amp;&amp;(onlar==binler)&amp;&amp;(y&#252;zler==y&#252;zler)">
+                            <then>
+                                <output expression="say&#305;&amp;&quot; say&#305;s&#305; palindromik bir say&#305;d&#305;r.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="say&#305;&amp;&quot; say&#305;s&#305; palindromik bir say&#305; de&#287;ildir.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="birler" expression="say&#305;%10"/>
+                        <assign variable="onlar" expression="(say&#305;/10)%10"/>
+                        <assign variable="y&#252;zler" expression="(say&#305;/100)%10"/>
+                        <assign variable="binler" expression="(say&#305;/1000)%10"/>
+                        <assign variable="onbinler" expression="(say&#305;/10000)%10"/>
+                        <if expression="(birler==onbinler)&amp;&amp;(onlar==binler)&amp;&amp;(y&#252;zler==y&#252;zler)">
+                            <then>
+                                <output expression="say&#305;&amp;&quot; say&#305;s&#305; palindromik bir say&#305;d&#305;r.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="say&#305;&amp;&quot; say&#305;s&#305; palindromik bir say&#305; de&#287;ildir.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="merve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 12:02:20 &#214;&#214;"/>
+        <attribute name="created" value="bWVydmU7REVTS1RPUC0yR0hCUVI1OzIwMTktMTAtMjQ7MTE6NDY6MTQgw5ZTOzMwMjE="/>
+        <attribute name="edited" value="bWVydmU7REVTS1RPUC0yR0hCUVI1OzIwMTktMTAtMjU7MTI6MDI6MjAgw5bDljsxOzMyNTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tahmin, sayac, rastgele" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="rastgele" expression="random(100)"/>
+            <assign variable="tahmin" expression="0"/>
+            <output expression="rastgele" newline="True"/>
+            <output expression="&quot;bir tahminde bulun.&quot;" newline="True"/>
+            <do expression="tahmin != rastgele">
+                <input variable="tahmin"/>
+                <if expression="rastgele != tahmin">
+                    <then>
+                        <if expression="rastgele &gt; tahmin">
+                            <then>
+                                <output expression="&quot;daha b&#252;y&#252;k bir tahmin gir.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;daha k&#252;&#231;&#252;k bir tahmin gir.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </do>
+            <output expression="rastgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp; sayac&amp;&quot; defada bildin.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
